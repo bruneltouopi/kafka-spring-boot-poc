@@ -1,15 +1,15 @@
 package com.example.demo.models;
 
+import java.io.Serializable;
+
 /**
  * Created by fabrice on 9/1/19.
  */
-public class User {
-    private String name;
-    private int age;
+public class Bar implements Serializable {
+    String name;
 
-    public User(String name, int age) {
+    public Bar(String name) {
         this.name = name;
-        this.age = age;
     }
 
     public String getName() {
@@ -20,19 +20,10 @@ public class User {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("User{");
+        final StringBuilder sb = new StringBuilder("Bar{");
         sb.append("name='").append(name).append('\'');
-        sb.append(", age=").append(age);
         sb.append('}');
         return sb.toString();
     }
