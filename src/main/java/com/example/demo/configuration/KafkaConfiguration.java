@@ -22,11 +22,11 @@ import java.util.Map;
 /**
  * Created by fabrice on 9/1/19.
  */
-@Configuration
-@EnableKafka
+/*@Configuration
+@EnableKafka*/
 public class KafkaConfiguration {
 
-
+/*
     @Bean
     public ConcurrentKafkaListenerContainerFactory kafkaListenerContainerFactory(
             ConcurrentKafkaListenerContainerFactoryConfigurer configurer,
@@ -43,7 +43,7 @@ public class KafkaConfiguration {
     public RecordMessageConverter converter() {
         return new StringJsonMessageConverter();
     }*/
-
+/*
     @Bean
     public RecordMessageConverter converter() {
         StringJsonMessageConverter converter = new StringJsonMessageConverter();
@@ -58,5 +58,5 @@ public class KafkaConfiguration {
         return converter;
     }
 
-
+*/
 }

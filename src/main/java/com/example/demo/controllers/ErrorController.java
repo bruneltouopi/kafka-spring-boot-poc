@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class ErrorController {
 
-
+/*
     @Autowired
     private  KafkaTemplate<String, Foo> kafkaTemplate;
 
     @PostMapping(path = "/send/foo/{name}")
     public void sendFoo(@PathVariable String name) {
-        this.kafkaTemplate.send("topic1", new Foo(name));
+        this.kafkaTemplate.send("topic1", new Foo(name,""));
     }
-
+*/
 }

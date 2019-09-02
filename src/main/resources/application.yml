@@ -1,17 +1,31 @@
-server:
-  port: 9000
+#server:
+#  port: 9000
+#spring:
+#  kafka:
+#    consumer:
+#      bootstrap-servers: localhost:9092
+#      group-id: group_id
+#      auto-offset-reset: earliest
+#     # key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      #value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#    producer:
+#      bootstrap-servers: localhost:9092
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      #value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
 spring:
   kafka:
-    consumer:
-      bootstrap-servers: localhost:9092
-      group-id: group_id
-      auto-offset-reset: earliest
-     # key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      #value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-    producer:
-      bootstrap-servers: localhost:9092
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      #value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    bootstrap-servers: localhost:9092
+
+app:
+  topic:
+    example: topic1
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    com.memorynotfound: DEBUG
 

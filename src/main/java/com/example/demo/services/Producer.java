@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class Producer {
-    private static final Logger LOGGER= LoggerFactory.getLogger(Producer.class);
+   /* private static final Logger LOGGER= LoggerFactory.getLogger(Producer.class);
     private static final String TOPIC="users";
 
     @Autowired
@@ -21,6 +21,6 @@ public class Producer {
         LOGGER.info(String.format("#### -> Producing message ->%s",message));
         this.kafkaTemplate.send(TOPIC,message);
 
-    }
+    }*/
 
 }

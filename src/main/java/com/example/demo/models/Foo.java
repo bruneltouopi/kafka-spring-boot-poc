@@ -5,11 +5,17 @@ import java.io.Serializable;
 /**
  * Created by fabrice on 9/1/19.
  */
-public class Foo implements Serializable{
-    private String name;
+public class Foo {
 
-    public Foo(String name) {
+    private String name;
+    private String description;
+
+    public Foo() {
+    }
+
+    public Foo(String name, String description) {
         this.name = name;
+        this.description = description;
     }
 
     public String getName() {
@@ -20,11 +26,19 @@ public class Foo implements Serializable{
         this.name = name;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Foo{");
-        sb.append("name='").append(name).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return "Foo{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

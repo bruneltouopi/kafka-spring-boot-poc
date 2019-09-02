@@ -17,7 +17,7 @@ public class ErrorHandler {
      * Method to simulate errors
      * @param in
      */
-    @KafkaListener(id = "userGroup", topics = "topic1")
+ /*   @KafkaListener(id = "userGroup", topics = "topic1")
     public void listen(String in) {
         logger.info("Received: " + in);
         if (in.startsWith("foo")) {
@@ -36,5 +36,5 @@ public class ErrorHandler {
         if (foo.getName().startsWith("fail")) {
             throw new RuntimeException("failed");
         }
-    }
+    }*/
 }
